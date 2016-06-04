@@ -93,9 +93,9 @@ public class ChooseAreaActivity extends Activity {
 			finish();
 			return;
 		}
-		
+//		
 //		if (isFromWeatherActivityBack) {
-//			//selectedCity = cityList.get(index);
+//			selectedCity = cityList.get(getIntent().getIntExtra("city_index", 0));
 //			queryCounties();
 //		}
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -123,8 +123,9 @@ public class ChooseAreaActivity extends Activity {
 					Intent intent = new Intent(ChooseAreaActivity.this,
 							WeatherActivity.class);
 					intent.putExtra("county_code", countyCode);
+					intent.putExtra("city_name", index);
 					startActivity(intent);
-					finish();
+					//finish();
 				}
 			}
 		});

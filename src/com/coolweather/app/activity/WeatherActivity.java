@@ -164,11 +164,12 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		
 	}
 	
-	@Override
-	public void onBackPressed() {
-		Intent intent = new Intent(this,ChooseAreaActivity.class);
-		intent.putExtra("from_weather_activity_back", true);
-		startActivity(intent);
-		finish();
-	}
+	//@Override
+//	public void onBackPressed() {
+//		Intent intent = new Intent(this,ChooseAreaActivity.class);
+//		intent.putExtra("from_weather_activity", true);
+//		//intent.putExtra("city_index", getIntent().getIntExtra("city_name",0));
+//		startActivity(intent);
+//		finish();
+//	}
 }
